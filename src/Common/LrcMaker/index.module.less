@@ -1,0 +1,288 @@
+.audioPlay {
+    width: 30px;
+    height: 30px;
+    color: #9b83ff;
+    cursor: pointer;
+}
+
+.ircFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.irc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    .ircHeader {
+        z-index: 10;
+        flex-shrink: 0;
+        height: 56px;
+        padding: 16px 24px;
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 16px;
+
+        h1 {
+            margin: 0;
+            font-weight: 500;
+            font-size: 100%;
+        }
+
+        .onCloseIcon {
+            cursor: pointer;
+
+            i {
+                width: 24px;
+                height: 24px;
+                color: rgba(0, 0, 0, 0.6);
+                cursor: pointer;
+            }
+        }
+    }
+
+    .ircFooter {
+        display: flex;
+        flex-direction: row;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: flex-end;
+        height: 66px;
+        margin-top: auto;
+        padding: 0 24px;
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+        .ircFooterLeft {
+            margin-right: 16px;
+            color: #9b83ff !important;
+            border: 1px solid #9b83ff;
+        }
+
+        .ircFooterBtn {
+            width: 76px;
+            height: 34px;
+            padding: 0;
+            color: #fff;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+            border-radius: 17px;
+        }
+
+        .ircFooterRight {
+            line-height: 14px;
+            background: #9b83ff;
+            border: none;
+        }
+    }
+
+    .ircTip {
+        height: 46px;
+        margin: 0 24px;
+
+        .ircTipText {
+            color: rgba(0, 0, 0, 0.4);
+            font-size: 14px;
+            line-height: 14px;
+        }
+
+        .ircTipOver {
+            min-width: 220px;
+            border-radius: 4px;
+
+            .ircTipTip {
+                display: flex;
+                align-items: center;
+                padding: 8px;
+                font-size: 14px;
+                line-height: 14px;
+                border-radius: 4px;
+            }
+
+            .ircTipTipLeft {
+                width: 74px;
+                margin-right: 16px;
+                color: rgba(0, 0, 0, 0.8);
+                font-weight: 500;
+                text-align: left;
+            }
+
+            .ircTipTipRight {
+                color: rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+
+    .audioSlider {
+        :global {
+            .ant-tooltip-inner {
+                background-color: #fff;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    .ircTop {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        height: 64px;
+        margin: 0 24px;
+        background: rgba(0, 0, 0, 0.02);
+        border-radius: 8px;
+
+        :global {
+            .ant-card-body {
+                width: 100%;
+                padding: 0;
+            }
+
+            .ant-slider-handle {
+                background-color: #9b83ff;
+                border: 1px solid #fff;
+                box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%);
+            }
+
+            .ant-slider:hover .ant-slider-handle:not(.ant-tooltip-open) {
+                border-color: #ff948c;
+            }
+
+            .ant-slider-track {
+                background-color: #9b83ff;
+            }
+
+            .ant-slider:hover .ant-slider-track {
+                background-color: #9b83ff;
+            }
+        }
+
+        .ircTopAudio {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 0 14px;
+
+            .ircTopAudioLeft {
+                margin-right: 8px;
+            }
+
+            .ircTopAudioLRight {
+                flex: 1;
+
+                .audioTime {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    height: 20px;
+                    padding: 0 8px 0 4px;
+                    font-size: 14px;
+                    line-height: 1;
+                }
+
+                .audioTime span:first-child {
+                    color: rgba(0, 0, 0, 0.8);
+                }
+
+                .audioTime span:last-child {
+                    color: rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+    }
+
+    .ircMain {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        height: 574px;
+        margin: 16px 24px;
+        overflow-y: auto;
+        background: rgba(0, 0, 0, 0.03);
+        border-radius: 8px;
+
+        .ircMainTop {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 56px;
+            margin: 0 16px;
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        li {
+            margin: 0;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        .ircMainContent {
+            height: 504px;
+            overflow-y: scroll;
+
+            .ircMainContentLi {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                box-sizing: border-box;
+                height: 40px;
+                padding: 10px 16px;
+                color: rgba(0, 0, 0, 0.8);
+                font-size: 14px;
+                line-height: 1.4;
+                cursor: pointer;
+            }
+
+            .ircMainContentLi:hover {
+                background: rgba(0, 0, 0, 0.05);
+            }
+
+            .selected {
+                background: rgba(0, 0, 0, 0.05);
+            }
+
+            .ircMainContentLiTime {
+                width: 70px;
+                margin-right: 16px;
+            }
+
+            .ircMainContentLiText {
+                flex: 1;
+                word-break: break-all;
+            }
+        }
+
+        .addTag {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 84px;
+            height: 24px;
+            padding: 0;
+            font-size: 12px;
+            line-height: 1;
+            border-radius: 32px;
+        }
+
+        .redBtn {
+            color: #fff;
+            text-shadow: none;
+            background-color: #9b83ff;
+            border-color: #9b83ff;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        :global {
+            .ant-card-body {
+                width: 100%;
+            }
+        }
+    }
+}
