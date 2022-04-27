@@ -1,7 +1,7 @@
 {
   "private": false,
-  "name": "syqm-react-components",
-  "version": "1.0.3",
+  "name": "tsuki-react-components",
+  "version": "1.0.0",
   "scripts": {
     "dev": "dumi dev",
     "c:build": "father-build",

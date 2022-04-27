@@ -9,7 +9,7 @@ nav:
 ```tsx
 import { Button } from 'antd';
 import React, { useState } from 'react';
-import { useInterval } from 'syqm-react-components';
+import { useInterval } from 'tsuki-react-components';
 
 function intervalMode() {
     const [value, setValue] = useState(0);

@@ -12,7 +12,7 @@ nav:
 
 ```tsx
 import React from 'react';
-import { TextTip } from 'syqm-react-components';
+import { TextTip } from 'tsuki-react-components';
 
 const Demo = () => <TextTip message="测试当前文本长度是否超出150" maxWidth={150} center />;
 

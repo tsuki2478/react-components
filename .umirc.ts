@@ -13,7 +13,7 @@ const functionMenu = [];
 const specialMenu = [];
 
 export default defineConfig({
-    title: '声音启蒙',
+    title: 'tsuki2478',
     mode: 'site', // site: 站点模式（导航头 + 左侧菜单 + 右侧内容）。 doc：文档
     favicon: BaseUrl + 'svg.png',
     logo: BaseUrl + 'svg.png',

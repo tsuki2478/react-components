@@ -12,7 +12,7 @@ nav:
 
 ```tsx
 import React from 'react';
-import { Text } from 'syqm-react-components';
+import { Text } from 'tsuki-react-components';
 
 export default () => <Text title="First Demo" />;
 ```

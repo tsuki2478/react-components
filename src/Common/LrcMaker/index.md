@@ -14,7 +14,7 @@ nav:
 import { Button, Card, message, Modal } from 'antd';
 import TextArea from 'antd/lib/input/TextArea';
 import React, { useState } from 'react';
-import { LrcMaker } from 'syqm-react-components';
+import { LrcMaker } from 'tsuki-react-components';
 
 import './md.less';
 
